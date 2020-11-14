@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     var arrData = [GetDataModel]()
     
+    //MARK:- Views Life cycle of the Controller-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.GetAllData()
@@ -33,6 +34,8 @@ class ViewController: UIViewController {
         }
     }
 }
+
+//MARK:- UITableViewDelegate,UITableViewDataSource
 
 extension ViewController : UITableViewDelegate,UITableViewDataSource {
     
