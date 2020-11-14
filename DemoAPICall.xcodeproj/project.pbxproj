@@ -25,6 +25,7 @@
 		B70284BC255E8F3A00D5CAFD /* DictionaryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70284B1255E8F3A00D5CAFD /* DictionaryExtensions.swift */; };
 		B70284BD255E8F3A00D5CAFD /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70284B2255E8F3A00D5CAFD /* DataExtension.swift */; };
 		B70284BF255E980800D5CAFD /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70284BE255E980800D5CAFD /* DataTableViewCell.swift */; };
+		B79607FF256076DE00FF8CCF /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79607FE256076DE00FF8CCF /* DetailsVC.swift */; };
 		CE0643C3F6BE654AE8021FA6 /* Pods_DemoAPICall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39AFB474FFA3576AE8BC0F1C /* Pods_DemoAPICall.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		B70284B1255E8F3A00D5CAFD /* DictionaryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtensions.swift; sourceTree = "<group>"; };
 		B70284B2255E8F3A00D5CAFD /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
 		B70284BE255E980800D5CAFD /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		B79607FE256076DE00FF8CCF /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		B7028489255E8EAA00D5CAFD /* DemoAPICall */ = {
 			isa = PBXGroup;
 			children = (
+				B79607FD2560769700FF8CCF /* ViewControllers */,
 				B70284A1255E8EC900D5CAFD /* Delegates */,
 				B70284AE255E8F3A00D5CAFD /* Models */,
 				B702849E255E8EB400D5CAFD /* View */,
@@ -180,6 +183,14 @@
 				B70284B2255E8F3A00D5CAFD /* DataExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B79607FD2560769700FF8CCF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B79607FE256076DE00FF8CCF /* DetailsVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C6E6111C8EA52F0B4F22C023 /* Pods */ = {
@@ -323,6 +334,7 @@
 				B70284B7255E8F3A00D5CAFD /* NetworkHttpClient.swift in Sources */,
 				B70284BF255E980800D5CAFD /* DataTableViewCell.swift in Sources */,
 				B70284BA255E8F3A00D5CAFD /* BaseInterface.swift in Sources */,
+				B79607FF256076DE00FF8CCF /* DetailsVC.swift in Sources */,
 				B70284B8255E8F3A00D5CAFD /* ReachabilityManager.swift in Sources */,
 				B702848D255E8EAA00D5CAFD /* SceneDelegate.swift in Sources */,
 				B70284B3255E8F3A00D5CAFD /* Constant.swift in Sources */,
