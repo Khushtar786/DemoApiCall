@@ -10,21 +10,33 @@ import UIKit
 
 class DetailsVC: UIViewController {
 
+    //MARK:- IBOutlet's of the Controler-
+    
+    @IBOutlet weak var btnb1: UIButton!
+    @IBOutlet weak var btnb2: UIButton!
+    @IBOutlet weak var btnb3: UIButton!
+    @IBOutlet weak var btnb4: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnActionB1(_ sender: UIButton) {
+      print("btnActionB1")
     }
-    */
+    
+    @IBAction func btnActionB2(_ sender: UIButton) {
+        print("btnActionB2")
+    }
+    
+    @IBAction func btnActionB3(_ sender: UIButton) {
+        print("btnActionB3")
+    }
+    
+    @IBAction func btnActionB4(_ sender: UIButton) {
+        print("btnActionB4")
+    }
 
 }

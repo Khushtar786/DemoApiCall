@@ -128,14 +128,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WtO-Q6-Tbw">
+                                <rect key="frame" x="20" y="170" width="335" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnz-Xi-V2V">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="B1"/>
+                                        <connections>
+                                            <action selector="btnActionB1:" destination="MQm-0J-HlL" eventType="touchUpInside" id="HcM-Qa-M03"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acs-fa-u8Q">
+                                        <rect key="frame" x="86" y="0.0" width="77.5" height="50"/>
+                                        <color key="backgroundColor" red="0.16019211899999999" green="0.53406567260000004" blue="0.26715662680000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="B2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnActionB2:" destination="MQm-0J-HlL" eventType="touchUpInside" id="eaM-LQ-W7e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXJ-f2-ms8">
+                                        <rect key="frame" x="171.5" y="0.0" width="78" height="50"/>
+                                        <color key="backgroundColor" red="0.99607843139999996" green="0.60784313729999995" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="B3"/>
+                                        <connections>
+                                            <action selector="btnActionB3:" destination="MQm-0J-HlL" eventType="touchUpInside" id="T8E-QJ-8n8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEW-d6-LAO">
+                                        <rect key="frame" x="257.5" y="0.0" width="77.5" height="50"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.61960784310000006" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="B4"/>
+                                        <connections>
+                                            <action selector="btnActionB4:" destination="MQm-0J-HlL" eventType="touchUpInside" id="6OW-YE-gYw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="scj-Sc-jG9"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="rAS-Kn-cpo" firstAttribute="trailing" secondItem="WtO-Q6-Tbw" secondAttribute="trailing" constant="20" id="E8n-ns-5v2"/>
+                            <constraint firstItem="WtO-Q6-Tbw" firstAttribute="leading" secondItem="rAS-Kn-cpo" secondAttribute="leading" constant="20" id="Qad-hu-AbT"/>
                             <constraint firstItem="t1M-jz-s3E" firstAttribute="centerX" secondItem="K1v-AV-zRm" secondAttribute="centerX" id="WU0-gs-UAs"/>
                             <constraint firstItem="t1M-jz-s3E" firstAttribute="top" secondItem="rAS-Kn-cpo" secondAttribute="top" constant="20" id="ctm-h7-siy"/>
+                            <constraint firstItem="WtO-Q6-Tbw" firstAttribute="top" secondItem="t1M-jz-s3E" secondAttribute="bottom" constant="100" id="smt-x4-8VC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rAS-Kn-cpo"/>
                     </view>
+                    <connections>
+                        <outlet property="btnb1" destination="Xnz-Xi-V2V" id="2nt-yY-qn3"/>
+                        <outlet property="btnb2" destination="acs-fa-u8Q" id="hbL-Za-EMc"/>
+                        <outlet property="btnb3" destination="sXJ-f2-ms8" id="opN-7u-fVU"/>
+                        <outlet property="btnb4" destination="IEW-d6-LAO" id="BIG-js-wcq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7on-Sm-Bc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
