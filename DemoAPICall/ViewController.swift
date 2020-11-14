@@ -13,6 +13,8 @@ class ViewController: UIViewController {
    //MARK:- IBOutlet's of the Controller-
     @IBOutlet weak var tblView: UITableView!
     
+    
+    //MARK:- Class variable's of the Controller-
     var arrData = [GetDataModel]()
     
     //MARK:- Views Life cycle of the Controller-
@@ -21,6 +23,7 @@ class ViewController: UIViewController {
         self.GetAllData()
     }
     
+    //MARK:-Custom function of the Controller-
     private func GetAllData() {
         AuthenticationInterface.shared.GetApiCall() { (response, success, message) in
             if let list = response as? GetAllDataModel, success {
